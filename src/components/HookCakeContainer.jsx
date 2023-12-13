@@ -7,7 +7,7 @@ import { buyCake } from '../redux'
 
 function HookCakeContainer() {
   // useSelector takes a function as argument.
-  const numOfHookCakes = useSelector( state => state.numOfCakes)
+  const numOfHookCakes = useSelector( state => state.cake.numOfCakes)
 
   //useDispatch function return a dispatch function
   const dispatch = useDispatch()
