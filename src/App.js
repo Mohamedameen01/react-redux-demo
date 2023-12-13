@@ -1,6 +1,8 @@
-import './App.css';
+
 import CakeContainer from './components/CakeContainer';
-import store from './redux/cake/store';
+import HookCakeContainer from './components/HookCakeContainer';
+
+import store from './redux/store';
 import { Provider } from 'react-redux';
 
 function App() {
@@ -9,9 +11,11 @@ function App() {
     <Provider store = {store}>
       <div className="App">
         <CakeContainer />
+        <HookCakeContainer />
+        
       </div>
     </Provider>
-  );
+  )
 }
 
 export default App;
