@@ -3,6 +3,7 @@
 import { legacy_createStore, applyMiddleware } from "redux";
 // Importing Logger.
 import logger from "redux-logger";
+import {thunk} from "redux-thunk";
 import rootReducer from "./rootReducer";
 import { composeWithDevTools } from "redux-devtools-extension";
 
@@ -10,6 +11,6 @@ import { composeWithDevTools } from "redux-devtools-extension";
 // And passing logger as an argument of applyMiddleware to get information that - 
 // related to redux store.
 const store = legacy_createStore(rootReducer, composeWithDevTools(
-    applyMiddleware(logger)));
+    applyMiddleware(logger, thunk)));
 
 export default store

@@ -21,4 +21,7 @@ const mapDispatchToProps = dispatch => {
         buyIceCream: () => dispatch(buyIceCream())
     }
 } 
-export default connect(mapStateToProps, mapDispatchToProps)(IceCreamContainer)
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+    )(IceCreamContainer)

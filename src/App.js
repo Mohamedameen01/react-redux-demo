@@ -3,6 +3,7 @@ import HookCakeContainer from './components/HookCakeContainer';
 import IceCreamContainer from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
+import UserContainer from './components/UserContainer';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
@@ -11,12 +12,13 @@ function App() {
     // Providing the store to be available for your whole application.
     <Provider store = {store}>
       <div className="App">
-        <CakeContainer />
+        {/* <CakeContainer />
         <HookCakeContainer />
         <IceCreamContainer />
         <NewCakeContainer />
         <ItemContainer cake />
-        <ItemContainer />
+        <ItemContainer /> */}
+        <UserContainer />
       </div>
     </Provider>
   )

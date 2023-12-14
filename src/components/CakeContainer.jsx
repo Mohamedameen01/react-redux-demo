@@ -32,4 +32,7 @@ const mapDispatchToProps = dispatch => {
 // Here, connecting mapStateToProps and mapDispatchToProps with CakeContainer.
 // This connect function providing to access props from these map functions to -
 // CakeContainer Component.
-export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer) 
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+  )(CakeContainer) 
